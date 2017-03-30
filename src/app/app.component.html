@@ -1,0 +1,14 @@
+<vg-player>
+    <vg-controls>
+        <vg-play-pause></vg-play-pause>
+
+        <vg-scrub-bar>
+            <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+        </vg-scrub-bar>
+
+        <vg-fullscreen></vg-fullscreen>
+    </vg-controls>
+
+    <video #videoRef id="video" [vgMedia]="videoRef" src="http://static.videogular.com/assets/videos/videogular.mp4"></video>
+    <app-time-viewer #timerRef id="timer" [vgMedia]="timerRef" [duration]="videoRef.duration"></app-time-viewer>
+</vg-player>
