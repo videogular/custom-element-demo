@@ -9,9 +9,9 @@
         <vg-fullscreen></vg-fullscreen>
     </vg-controls>
 
-    <video #myVideoRef
-           id="myVideo"
-           src="http://static.videogular.com/assets/videos/videogular.mp4"
-           [vgMedia]="myVideoRef">
-    </video>
+    <app-time-viewer #myTimeRef
+                     id="myTime"
+                     [duration]="50"
+                     [vgMedia]="myTimeRef">
+    </app-time-viewer>
 </vg-player>
