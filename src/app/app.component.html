@@ -1,0 +1,17 @@
+<vg-player>
+    <vg-controls>
+        <vg-play-pause></vg-play-pause>
+
+        <vg-scrub-bar>
+            <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+        </vg-scrub-bar>
+
+        <vg-fullscreen></vg-fullscreen>
+    </vg-controls>
+
+    <video #myVideoRef
+           id="myVideo"
+           src="http://static.videogular.com/assets/videos/videogular.mp4"
+           [vgMedia]="myVideoRef">
+    </video>
+</vg-player>
