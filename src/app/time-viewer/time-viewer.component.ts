@@ -76,21 +76,6 @@ export class TimeViewerComponent implements OnInit, IPlayable {
         );
     }
 
-    seekTime(value:number, byPercent:boolean = false) {
-        let second:number;
-        let duration:number = this.duration;
-
-        if (byPercent) {
-            second = value * duration / 100;
-        }
-        else {
-            second = value;
-        }
-
-        this.time.current = second;
-        this.currentTime = second;
-    }
-
     set currentTime(seconds) {
         this.time.current = seconds;
         this.elem.dispatchEvent(new CustomEvent(VgEvents.VG_TIME_UPDATE));
